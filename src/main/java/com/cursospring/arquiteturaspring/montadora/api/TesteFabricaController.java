@@ -18,7 +18,6 @@ public class TesteFabricaController {
 
     @Autowired
     //@Qualifier("motorEletrico")
-    // teste
     private Motor motor;
 
     @PostMapping

@@ -1,2 +1,2 @@
-TEXTO 2
-TEXTO 3
+function deslogando() {...}
+function exit() {...}

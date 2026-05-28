@@ -16,8 +16,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/carros")
 public class TesteFabricaController {
 
+    // @Qualifier Serve para dizer qual o nome do Bean injetado,
+    // sempre quando tiver mais de um Bean do mesmo tipo no Container.
     @Autowired
-    //@Qualifier("motorEletrico")
+    @Qualifier("motorTurbo")
     private Motor motor;
 
     @PostMapping

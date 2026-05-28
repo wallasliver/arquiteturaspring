@@ -6,6 +6,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 
+// A Classe Configuration tem o objetivo é registrar alguns Beans do Container,
+// de InjenÇÃO de dependencias do Spring // Definições de Beans
 @Configuration
 public class MontadoraConfiguration {
 
@@ -24,7 +26,7 @@ public class MontadoraConfiguration {
         return motor;
     }
 
-    @Bean(name = "motorEletrico")
+    @Bean(name = "motorEletrico") // O Bean tem uma propriedade name
     public Motor motorEletrico(){
         var motor = new Motor();
         motor.setCavalos(180);

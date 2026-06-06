@@ -10,6 +10,7 @@ public class Carro {
 
 //Construtor
     public Carro(Motor motor) {
+
         this.motor = motor;
     }
 
@@ -54,7 +55,7 @@ public class Carro {
 
     @Override
     public String toString() {
-        return "Carro{" +
+        return "Carro{"+
                 "modelo='" + modelo + '\'' +
                 ", cor=" + cor +
                 ", motor=" + motor +

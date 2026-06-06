@@ -23,7 +23,7 @@ public class TesteFabricaController {
     private Motor motor;
 
     @PostMapping
-    public CarroStatus ligarCarro(@RequestBody Chave chave){
+    public CarroStatus ligarCarro(@RequestBody Chave chave){ // Como vai receber a requisição via JSON entao se usa @RequestBody
         var carro = new HondaHRV(motor);
         return carro.darIgnicao(chave);
     }
